@@ -1,12 +1,9 @@
 package api
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/swaggo/swag/example/basic/web"
 )
 
-//
 // @Summary Add a new pet to the store
 // @Description get string by ID
 // @Accept  json
@@ -16,10 +13,7 @@ import (
 // @Failure 400 {object} web.APIError "We need ID!!"
 // @Failure 404 {object} web.APIError "Can not find ID"
 // @Router /testapi/get-string-by-int/{some_id} [get]
-func GetStringByInt(c *gin.Context) {
-	err := web.APIError{}
-	fmt.Println(err)
-}
+func GetStringByInt(c *gin.Context) { _ = "STUB: not implemented"; return }
 
 // @Description get struct array by ID
 // @Accept  json
@@ -31,9 +25,7 @@ func GetStringByInt(c *gin.Context) {
 // @Failure 400 {object} web.APIError "We need ID!!"
 // @Failure 404 {object} web.APIError "Can not find ID"
 // @Router /testapi/get-struct-array-by-string/{some_id} [get]
-func GetStructArrayByString(c *gin.Context) {
-
-}
+func GetStructArrayByString(c *gin.Context) { _ = "STUB: not implemented"; return }
 
 type Pet3 struct {
 	ID int `json:"id"`

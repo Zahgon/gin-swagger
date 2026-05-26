@@ -18,8 +18,4 @@ import (
 
 // @BasePath /v2
 
-func Register(router *gin.Engine) {
-	v2 := router.Group("v2")
-
-	v2.GET("/books", GetBooks)
-}
+func Register(router *gin.Engine) { _ = "STUB: not implemented"; return }
